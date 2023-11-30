@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verificação de Elegibilidade para Empréstimo</title>
+</head>
+<body>
+
+<script>
+  // JavaScript incorporado
+
+  // Declaração de variáveis
+  var rendaMensal, possuiEmprestimo;
+
+  // Entrada de dados
+  rendaMensal = parseFloat(prompt("Informe sua renda mensal: R$"));
+  possuiEmprestimo = parseInt(prompt("Possui algum outro empréstimo ativo? (1 para Sim / 0 para Não):"));
+
+  // Condição / Processamento
+  if (rendaMensal > 2000 || possuiEmprestimo == 0) {
+    // Saída
+    alert("Parabéns! Você é elegível para um novo empréstimo.");
+  } else {
+    // Saída
+    alert("Desculpe, você não atende aos critérios de elegibilidade para um novo empréstimo.");
+  }
+</script>
+
+</body>
+</html>
