@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor de Temperatura</title>
+</head>
+<body>
+
+<script>
+  // JavaScript incorporado
+
+  // Declaração de variáveis
+  let temperaturaC, temperaturaF, temperaturaK;
+
+  // Entrada de dados
+  temperaturaC = parseFloat(prompt("Informe a temperatura em Celsius:"));
+
+  // Processamento
+  temperaturaF = (temperaturaC * 9/5) + 32;
+  temperaturaK = temperaturaC + 273.15;
+
+  // Saída de dados
+  document.write("<p>A temperatura em Fahrenheit é: " + temperaturaF.toFixed(2) + "</p>");
+  document.write("<p>A temperatura em Kelvin é: " + temperaturaK.toFixed(2) + "</p>");
+</script>
+
+</body>
+</html>

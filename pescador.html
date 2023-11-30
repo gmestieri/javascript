@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pescaria do João</title>
+</head>
+<body>
+
+<script>
+  // JavaScript incorporado
+
+  // Declaração de variáveis
+  let peso, diferenca, multa, taxaMulta;
+
+  // Entrada de dados
+  peso = parseFloat(prompt("Pescaria do João\n\nInforme o Peso em Kilos:"));
+  taxaMulta = 4;
+
+  // Condição / Processamento
+  if (peso > 50) {
+    diferenca = peso - 50;
+    multa = diferenca * taxaMulta;
+    // Saída
+    document.write("<p>Peso Excedido!</p>");
+    document.write("<p>Multa R$: " + multa.toFixed(2) + "</p>");
+  } else {
+    // Saída
+    document.write("<p>Peso Permitido, Sem Multas</p>");
+  }
+</script>
+
+</body>
+</html>

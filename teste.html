@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Black Friday</title>
+</head>
+<body>
+
+<script>
+  // JavaScript incorporado
+
+  // Declaração de variáveis
+  let produto;
+  let preco, desconto;
+
+  // Entrada de dados
+  alert("BLACK FRIDAY 2023");
+
+  // Solicita e lê o nome do produto
+  produto = prompt("Informe o nome do produto:");
+
+  // Solicita e lê o preço do produto
+  preco = parseFloat(prompt("Informe o preço do produto:"));
+
+  // Solicita e lê a porcentagem de desconto
+  desconto = parseFloat(prompt("Informe a porcentagem de desconto (%):"));
+
+  // Processamento
+  preco = preco - (preco * (desconto / 100));
+
+  // Saída de dados
+  alert("Preço com Desconto: " + preco.toFixed(2));
+</script>
+
+</body>
+</html>
