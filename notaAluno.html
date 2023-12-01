@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avaliação do Aluno</title>
+</head>
+<body>
+
+<script>
+  // JavaScript incorporado
+
+  // Declaração de variáveis
+  let nota;
+
+  // Entrada de dados
+  nota = parseInt(prompt("Entre com a nota do aluno:"));
+
+  // Escolha da situação do aluno com base na nota
+  switch (nota) {
+    case 0:
+    case 1:
+    case 2:
+    case 3:
+      alert("Reprovado!");
+      break;
+    case 4:
+    case 5:
+    case 6:
+    case 7:
+      alert("Em Recuperação final!");
+      break;
+    case 8:
+    case 9:
+    case 10:
+      alert("Aprovado!");
+      break;
+    default:
+      alert("Nota inválida!");
+  }
+</script>
+
+</body>
+</html>

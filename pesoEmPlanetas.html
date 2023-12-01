@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peso em Planetas</title>
+</head>
+<body>
+
+<script>
+  // JavaScript incorporado
+
+  // Declaração de variáveis
+  let peso, planeta;
+
+  // Entrada de dados
+  peso = parseFloat(prompt("Informe o seu peso na Terra:"));
+  planeta = parseInt(prompt("Escolha o Planeta:\n1- Mercúrio\n2- Vênus\n3- Marte\n4- Júpiter\n5- Saturno\n6- Urano"));
+
+  // Escolha do peso no planeta escolhido
+  switch (planeta) {
+    case 1:
+      alert("Peso em Mercúrio é: " + (peso * 0.37) + " KG");
+      break;
+    case 2:
+      alert("Peso em Vênus é: " + (peso * 0.88) + " KG");
+      break;
+    case 3:
+      alert("Peso em Marte é: " + (peso * 0.38) + " KG");
+      break;
+    case 4:
+      alert("Peso em Júpiter é: " + (peso * 2.64) + " KG");
+      break;
+    case 5:
+      alert("Peso em Saturno é: " + (peso * 1.15) + " KG");
+      break;
+    case 6:
+      alert("Peso em Urano é: " + (peso * 1.17) + " KG");
+      break;
+    default:
+      alert("Opção de Planeta Inválida!");
+  }
+</script>
+
+</body>
+</html>

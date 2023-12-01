@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Login</title>
+</head>
+<body>
+
+<script>
+  // JavaScript incorporado
+
+  // Declaração de variáveis
+  let usuario, senha;
+
+  // Entrada de dados
+  usuario = prompt("Informe o usuário:");
+  senha = prompt("Informe a senha:");
+
+  document.write("<p>--------------------</p>");
+
+  // Condição / Processamento
+  if (usuario == "admin" && senha == "1234") {
+    // Saída
+    document.write("<p>Olá Administrador, bem-vindo ao Sistema</p>");
+  } else {
+    document.write("<p>Usuário e/ou Senha incorretos</p>");
+  }
+</script>
+
+</body>
+</html>
