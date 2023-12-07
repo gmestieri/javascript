@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pares e Ímpares</title>
+</head>
+<body>
+
+<script>
+  // JavaScript incorporado
+
+  // Declaração de variáveis
+  let contador, numero, contpar = 0, contimpar = 0;
+
+  // Estrutura de Repetição (Para)
+  for (contador = 1; contador <= 10; contador++) {
+    // Entrada
+    numero = parseInt(prompt("Informe o número desejado:"));
+
+    document.write("<p>" + numero + "</p>");
+
+    // Condição / Processamento
+    if (numero % 2 == 0) {
+      contpar++;
+    } else {
+      contimpar++;
+    }
+  }
+
+  // Saída
+  document.write("<p>Quantidade de Números Pares: " + contpar + "</p>");
+  document.write("<p>Quantidade de Números Ímpares: " + contimpar + "</p>");
+</script>
+
+</body>
+</html>
