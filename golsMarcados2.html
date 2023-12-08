@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contagem de Gols 2</title>
+</head>
+<body>
+    <script>
+        // Início do algoritmo em JavaScript
+        // Seção de Declarações das variáveis
+        let quantidadeGols, i;
+
+        // Entrada de dados
+        quantidadeGols = parseInt(prompt("Informe a quantidade de gols marcados pelo time em uma partida:"));
+
+        // Loop para contagem de gols
+        for (i = 1; i <= quantidadeGols; i++) {
+            document.write("Gol marcado!<br>");
+        }
+
+        document.write("<br>");
+
+        // Classificação do desempenho do time
+        if (quantidadeGols == 0) {
+            document.write("Time sem gols, precisa melhorar!");
+        } else {
+            if (quantidadeGols <= 3) {
+                document.write("Desempenho regular.");
+            } else {
+                document.write("Excelente desempenho!");
+            }
+        }
+    </script>
+</body>
+</html>
