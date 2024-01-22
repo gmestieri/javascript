@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Fatorial</title>
+</head>
+<body>
+    <script>
+        // Início do algoritmo em JavaScript
+        // Seção de Declarações das variáveis
+        let fatorial = 1;
+        let numero = parseInt(prompt("Informe o número que deseja calcular o fatorial:"));
+        let x;
+
+        // Loop para calcular o fatorial
+        for (x = numero; x >= 1; x--) {
+            fatorial *= x;
+        }
+
+        // Saída de dados
+        document.write("Fatorial de ", numero, " é: ", fatorial);
+    </script>
+</body>
+</html>
