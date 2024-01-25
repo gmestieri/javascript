@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+</head>
+<body>
+
+<script>
+    // Início do algoritmo em JavaScript
+    // Seção de Declarações das variáveis
+    let tabuada, contador, continua;
+
+    // Inicialização da variável 'continua'
+    continua = "s";
+
+    // Loop Principal (while)
+    while (continua.toLowerCase() === "s") {
+        // Entrada de dados
+        tabuada = parseInt(prompt("Informe a Tabuada desejada:"));
+
+        // Loop para exibição da tabuada
+        for (contador = 1; contador <= 10; contador++) {
+            // Saída
+            console.log(tabuada + " x " + contador + " = " + (contador * tabuada));
+        }
+
+        console.log("------------------------");
+
+        // Pergunta ao usuário se deseja calcular uma nova tabuada
+        continua = prompt("Deseja calcular uma nova tabuada? (s/n)").toLowerCase();
+    }
+</script>
+
+</body>
+</html>
