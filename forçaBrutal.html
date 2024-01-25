@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Força Bruta - Somatória</title>
+</head>
+<body>
+    <script>
+        // Início do algoritmo em JavaScript
+        // Seção de Declarações das variáveis
+        let i, nummaior, soma;
+
+        // Exibição de boas-vindas e leitura do número maior
+        alert("--- Calculando a SOMA de 1 até o Número Maior ---");
+        nummaior = parseInt(prompt("Digite o número maior:"));
+
+        document.write("<br>");
+
+        // Inicialização da variável de soma
+        soma = 0;
+
+        // Loop para realizar a somatória
+        for (i = 1; i <= nummaior; i++) {
+            soma += i;
+            document.write("Somando...: " + soma + "<br>");
+        }
+
+        document.write("<br>");
+
+        // Exibição do resultado final da somatória
+        document.write("O resultado da somatória utilizando força bruta é: " + soma);
+    </script>
+</body>
+</html>
